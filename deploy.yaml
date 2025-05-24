@@ -21,4 +21,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Upload index.html to S3
-        run: aws s3 cp index.html s3://web-site/index.html --acl public-read
+        run: aws s3 cp index.html s3://web-site-rosa/index.html --acl public-read
